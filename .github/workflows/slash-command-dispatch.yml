@@ -1,9 +1,10 @@
 name: Slash Command Dispatch
-on:
-  issue_comment:
-    # Type "edited" added here for test purposes. Where possible, avoid 
-    # using to prevent processing unnecessary events.
-    types: [created, edited]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+#     # Type "edited" added here for test purposes. Where possible, avoid 
+#     # using to prevent processing unnecessary events.
+#     types: [created, edited]
 jobs:
   slashCommandDispatch:
     runs-on: ubuntu-latest

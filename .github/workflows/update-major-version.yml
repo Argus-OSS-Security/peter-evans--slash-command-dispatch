@@ -1,18 +1,19 @@
 name: Update Major Version
 run-name: Update ${{ github.event.inputs.main_version }} to ${{ github.event.inputs.target }}
 
-on:
-  workflow_dispatch:
-    inputs:
-      target:
-        description: The target tag or reference
-        required: true
-      main_version:
-        type: choice
-        description: The major version tag to update
-        options:
-          - v5
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       target:
+#         description: The target tag or reference
+#         required: true
+#       main_version:
+#         type: choice
+#         description: The major version tag to update
+#         options:
+#           - v5
+# 
 jobs:
   tag:
     runs-on: ubuntu-latest

@@ -1,15 +1,16 @@
 name: CI
-on:
-  push:
-    branches: [main]
-    paths-ignore:
-      - 'README.md'
-      - 'docs/**'
-  pull_request:
-    branches: [main]
-    paths-ignore:
-      - 'README.md'
-      - 'docs/**'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#     paths-ignore:
+#       - 'README.md'
+#       - 'docs/**'
+#   pull_request:
+#     branches: [main]
+#     paths-ignore:
+#       - 'README.md'
+#       - 'docs/**'
 jobs:
   build:
     runs-on: ubuntu-latest

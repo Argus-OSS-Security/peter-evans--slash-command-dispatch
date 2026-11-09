@@ -1,7 +1,8 @@
 name: Hello World Command
-on:
-  repository_dispatch:
-    types: [hello-world-local-command]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   repository_dispatch:
+#     types: [hello-world-local-command]
 jobs:
   helloWorld:
     runs-on: ubuntu-latest
